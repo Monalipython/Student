@@ -1,0 +1,10 @@
+{% extends 'enroll/base1.html' %}
+{% block content %}
+<h1> .............Profile............ </h1>
+
+{% for profile in profile_list %}
+  <h2><a href="{{profile.get_absolute_url}}">{{profile.name}}</a></h2>
+  <p>Email: {{profile.email}} and Password :{{profle.password}} </p>
+{% endfor %}
+{% include 'enroll/pagination.html' with page=profile_list %}
+{% endblock content %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student CRUD Operation</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+</head>
+<body style="background-color:bisque">
+    <div class = "container mt-5" >
+        {% include 'enroll/messages.html' %}
+        <h2 class = "text-center alert alert-success "><i>Student & Book Management System </i></h2>
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <script src="{% static 'enroll/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'enroll/js/popper.js' %}"></script>
+    <script src="{% static 'enroll/js/bootstrap.min.js' %}"></script>
+</body>
+</html>
